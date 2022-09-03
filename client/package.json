@@ -1,20 +1,29 @@
 {
-  "name": "client",
+  "name": "contact-card-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Client-Side code for contact-card app",
   "private": "true",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode development",
     "dev": "webpack-dev-server",
     "start": "webpack --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MosNes/contact-card.git"
+  },
+  "author": "Joliver521",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MosNes/contact-card/issues"
+  },
+  "homepage": "https://github.com/MosNes/contact-card#readme",
   "devDependencies": {
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
     "babel-loader": "^8.2.5",
+    "babel-polyfill": "^6.26.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
