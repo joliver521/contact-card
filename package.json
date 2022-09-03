@@ -1,29 +1,32 @@
 {
   "name": "contact-card",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Contact Card Web App",
+  "main": " ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "heroku-prebuild": "npm install --dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joliver521/contact-card.git"
+    "url": "git+https://github.com/MosNes/contact-card.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "MosNes",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joliver521/contact-card/issues"
+    "url": "https://github.com/MosNes/contact-card/issues"
   },
-  "homepage": "https://github.com/joliver521/contact-card#readme",
+  "homepage": "https://github.com/MosNes/contact-card#readme",
   "dependencies": {
     "concurrently": "^7.3.0"
+  },
+  "engines": {
+    "node": "17.x"
   }
 }
