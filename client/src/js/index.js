@@ -14,10 +14,12 @@ import { Tooltip, Toast, Popover } from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //import indexedDB
-import { initdb } from './database';
+import { initDb, getDb, postDb } from './database';
 
 window.addEventListener('load', function () {
-  initdb();
+  initDb();
+  postDb('Lernantino', 'learnantino@test.com', '555-555-5555', Bear);
+  getDb();
   document.getElementById('logo').src = Logo;
   document.getElementById('bearThumbnail').src = Bear;
   document.getElementById('dogThumbnail').src = Dog;
